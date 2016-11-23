@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Yan's Blog LIS</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+
+<body class = "codes">
+  <h1 style="text-align:center;">Yan's Blog</h1>
+  <h2 style="text-align:center;">Longest Insequence Subsequence</h2>
+  <hr>
+
+  <code>
+    <br>Longest Increasing Subsequence is a way to find the longest increasing subsequence between all the number(or the select number) in the number list from beginning of the list to the end of the list, or any given start position in the list and end position in the list.
+<br>
+    <br>Is from left to right, find numbers in increasing order and increasing order only. And count the number as it goes, find the longest sequence it can have
+
+<br>
+    <br>Run time: O(n^2)
+<br>
+    <br>Data Structure :
+    <br>array A[] for the list of numbers
+    <br>array B[] for the longest increasing sequence up to that current position
+<br>
+    <br>Recursive Equation:
+    <br>B[i] = 	{ 1 + Max( B[j] : 0 <= j < i and A[j] < A[i]
+	  <br>        { 1
+<br>
+    <br>     Code:
+    <br>     for ( int i = 0; i < A.length(); i++)
+    <br>     {
+	  <br>        int maxN = 0;
+	  <br>        for ( int j = 0; j < i; j++)
+	  <br>         {
+		<br>             if( maxN < B[i] and A[j] < A[i])
+		<br>               {
+		<br>	                  maxN = B[i]
+		<br>                }
+	  <br>          }
+	  <br>          B[i] = maxN + 1
+    <br>      }
+<br>
+<br>maxN is the maximum value of B[j]: 0 <= j < i and A[j] < A[i], if there is no j works, then maxN = 0
+<br>because of maxN is the biggest value of longest increasing sequence up until the current number, and A[j] < A[i], so B[i] is equals to 1 more than the longest increasing sequence before it.
+  </code>
+</body>
+</html>
