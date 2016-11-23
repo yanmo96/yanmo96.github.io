@@ -9,6 +9,11 @@ body {
 body.codes {
   color:green;
 }
+
+iframe {
+  border:2px solid grey;
+}
+
 a:link {
     color: green;
     background-color: transparent;
@@ -28,4 +33,24 @@ a:active {
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
+}
+
+header, footer {
+    padding: 1em;
+
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
 }
