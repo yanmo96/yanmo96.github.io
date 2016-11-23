@@ -15,9 +15,10 @@ iframe {
 }
 
 a:link {
-    color: green;
+    color: pink;
     background-color: transparent;
     text-decoration: none;
+    text-decoration: underline;
 }
 a:visited {
     color: pink;
