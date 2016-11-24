@@ -7,7 +7,7 @@ body {
 }
 
 body.codes {
-  color:green;
+  color:#616A6B;
 }
 
 iframe {
@@ -15,13 +15,13 @@ iframe {
 }
 
 a:link {
-    color: pink;
+    color: #DC7633;
     background-color: transparent;
     text-decoration: none;
     text-decoration: underline;
 }
 a:visited {
-    color: pink;
+    color: #DC7633;
     background-color: transparent;
     text-decoration: none;
 }
@@ -38,7 +38,7 @@ a:active {
 
 header, footer {
     padding: 1em;
-
+    font-family: cursive;
     clear: left;
     text-align: center;
 }
